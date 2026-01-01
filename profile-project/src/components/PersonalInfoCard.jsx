@@ -1,11 +1,12 @@
 import Row from "./Row";
 
-export default function PersonalInfoCard(info) {
+export default function PersonalInfoCard({ info }) {
   return (
     <div className="card infoCard">
       <h2 className="cardTitle">Personal Information</h2>
+
       <div className="rows">
-        {object.keys(info).map((label) => (
+        {Object.keys(info).map((label) => (
           <Row key={label} label={label} value={info[label]}></Row>
         ))}
       </div>

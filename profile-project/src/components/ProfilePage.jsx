@@ -22,11 +22,11 @@ export default function ProfilePage({ user }) {
           title="STREAK"
           bigValue={`${user.streakDays} days`}
           footerText={`Longest Streak: ${user.longestStreak} days`}
-          icon=":fire:"
+          
         />
 
         <StatCard
-          title="RECENT bADGES"
+          title="RECENT BADGES"
           bigValue=""
           footerText={user.recentBadgesText}
         />
